@@ -18,12 +18,12 @@ Melon uses .melon files as markdown templates.
 When using Melon you'll have to pass it the path to your template. After doing that, you can set a context. The context contains all variables in a Dictionary.
 
 ```swift
-    if let path = Bundle.main.path(forResource: "welcome", ofType: "melon") {
-            let melon = Melon()
-            melon.load(template: path)
-            melon.context = data
-            print(melon.parse())
-        }
+if let path = Bundle.main.path(forResource: "welcome", ofType: "melon") {
+    let melon = Melon()
+    melon.load(template: path)
+    melon.context = data
+    print(melon.parse())
+}
 ```
 
 ### Echo
